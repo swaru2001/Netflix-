@@ -1,0 +1,89 @@
+
+
+body { 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost' , sans-serif;
+    background: url("sign.jpg") no-repeat center / cover;
+   
+   
+}
+
+.main{
+    width: 400px;
+    height: 550px;
+    background: rgb(20, 20, 20);
+    overflow: hidden;
+    opacity: 0.9;
+    border-radius: 1px;
+    box-shadow: 5px 20px 50px #000; 
+}
+#chk {
+    display: none;
+}
+
+.signin{
+    position: relative;
+    width: 100%;
+}
+
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.showcase-top img{
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40% , -50%);
+}
+label{
+    color: #fffbfb;
+    font-size: 2.4em;
+    justify-content: left;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+input{
+    width: 70%;
+    height: 30px;
+    background: #3e3e3e;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+button{
+    width: 75%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 50px;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background:red;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+#chk:checked ~ .signup label{
+    transform: scale(.6);
+}
